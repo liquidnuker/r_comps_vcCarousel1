@@ -1,9 +1,8 @@
 const path = require('path');
 const webpack = require('webpack');
-const Promise = require('es6-promise').Promise;
+var Promise = require('es6-promise').Promise;
 
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
-
 const extractCSS = new ExtractTextPlugin('../[name].bundle.css');
 
 module.exports = {
@@ -57,11 +56,16 @@ module.exports = {
       }
     ]
   },
+  externals: {
+    $: 'jquery',
+    Vue: 'vue',
+    VueRouter: 'vue-router'
+  },
   plugins: [
-    new webpack.ProvidePlugin({
-      $: 'jquery',
-      jQuery: 'jquery'
-    }),
+    // new webpack.ProvidePlugin({
+    //   $: 'jquery',
+    //   jQuery: 'jquery'
+    // }),
     // new webpack.optimize.CommonsChunkPlugin({
     //   name: 'vendor',
     // }),
