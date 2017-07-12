@@ -13,32 +13,31 @@
 <script>
 import {store} from "../js/store.js";
   export default {
-    data () {
+  data() {
       return {
         items: store.items,
         cIndex: 0
-      }
+      };
     },
-    mounted: function () {
-    },
+    mounted: function () {},
     methods: {
       nextItem: function () {
-      this.cIndex = this.cIndex + 1;
-      this.cIndex = this.cIndex % this.items.length; // go to first
-      return this.items[this.cIndex];
-      // this.refresh();
-    },
-    prevItem: function () {
-      if (this.cIndex === 0) {
-      this.cIndex = this.items.length; // go to last
-      }
-      this.cIndex = this.cIndex - 1;
-      return this.items[this.cIndex];
-      // this.refresh();
+        this.cIndex = this.cIndex + 1;
+        this.cIndex = this.cIndex % this.items.length; // go to first
+        return this.items[this.cIndex];
+        // this.refresh();
       },
-    customPage: function(index) {
-      console.log(index);
+      prevItem: function () {
+        if (this.cIndex === 0) {
+          this.cIndex = this.items.length; // go to last
+        }
+        this.cIndex = this.cIndex - 1;
+        return this.items[this.cIndex];
+        // this.refresh();
+      },
+      customPage: function (index) {
+        this.cIndex = index;
+      }
     }
-    } 
-  }
+};
 </script>
