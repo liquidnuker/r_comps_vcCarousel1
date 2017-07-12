@@ -73,6 +73,11 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
+//
+//
+//
+//
+//
 
 
 /* harmony default export */ __webpack_exports__["default"] = ({
@@ -83,9 +88,25 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
     };
   },
 
-  mounted: function mounted() {
-    console.log("Carousel1_01.vue mounted");
-    // console.log(this.cIndex);
+  mounted: function mounted() {},
+  methods: {
+    nextItem: function nextItem() {
+      this.cIndex = this.cIndex + 1;
+      this.cIndex = this.cIndex % this.items.length; // go to first
+      return this.items[this.cIndex];
+      // this.refresh();
+    },
+    prevItem: function prevItem() {
+      if (this.cIndex === 0) {
+        this.cIndex = this.items.length; // go to last
+      }
+      this.cIndex = this.cIndex - 1;
+      return this.items[this.cIndex];
+      // this.refresh();
+    },
+    customPage: function customPage(index) {
+      console.log(index);
+    }
   }
 });
 
@@ -95,7 +116,23 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('div', [_c('div', [_vm._v("\n    " + _vm._s(_vm.items[_vm.cIndex].itemName) + "\n  ")])])
+  return _c('div', [_c('div', [_vm._v("\n    " + _vm._s(_vm.items[_vm.cIndex].itemName) + "\n  ")]), _vm._v(" "), _vm._l((_vm.items), function(i, index) {
+    return _c('span', [_c('button', {
+      on: {
+        "click": function($event) {
+          _vm.customPage(index)
+        }
+      }
+    }, [_vm._v(_vm._s(index))])])
+  }), _vm._v(" "), _c('button', {
+    on: {
+      "click": _vm.prevItem
+    }
+  }, [_vm._v("previous")]), _vm._v(" "), _c('button', {
+    on: {
+      "click": _vm.nextItem
+    }
+  }, [_vm._v("next")])], 2)
 },staticRenderFns: []}
 module.exports.render._withStripped = true
 if (false) {
