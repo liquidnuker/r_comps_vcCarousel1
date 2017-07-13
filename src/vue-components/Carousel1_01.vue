@@ -22,17 +22,23 @@ import {store} from "../js/store.js";
     mounted: function () {},
     methods: {
       nextItem: function () {
-        this.cIndex = this.cIndex + 1;
-        this.cIndex = this.cIndex % this.items.length; // go to first
-        return this.items[this.cIndex];
+        let cIndex = this.cIndex; 
+        let items = this.items;
+        cIndex = cIndex + 1;
+        cIndex = cIndex % items.length; // go to first        
+        // return items[cIndex];
+        this.cIndex = cIndex;
         // this.refresh();
       },
       prevItem: function () {
-        if (this.cIndex === 0) {
-          this.cIndex = this.items.length; // go to last
+        let cIndex = this.cIndex;
+        let items = this.items;
+        if (cIndex === 0) {
+          cIndex = items.length; // go to last
         }
-        this.cIndex = this.cIndex - 1;
-        return this.items[this.cIndex];
+        cIndex = cIndex - 1;
+        // return this.items[cIndex];
+        this.cIndex = cIndex;
         // this.refresh();
       },
       customPage: function (index) {
