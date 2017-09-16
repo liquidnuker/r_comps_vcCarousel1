@@ -57,7 +57,7 @@ export default {
       },
       onChange: () => {},
       });
-      setInterval(() => topCarousel.next(), 2600)
+      // setInterval(() => topCarousel.next(), 2600)
     }
   },
   mounted: function () {

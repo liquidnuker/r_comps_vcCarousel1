@@ -1,5 +1,6 @@
 // jsonloader
 // ======================================================/
+// todo: replace with axios
 const jsonLoader = {
   start: (url) => {
     return new Promise(function (resolve, reject) {

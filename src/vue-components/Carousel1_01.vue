@@ -28,7 +28,6 @@ import {store} from "../js/store.js";
         cIndex = cIndex % items.length; // go to first        
         // return items[cIndex];
         this.cIndex = cIndex;
-        // this.refresh();
       },
       prevItem: function () {
         let cIndex = this.cIndex;
@@ -39,7 +38,6 @@ import {store} from "../js/store.js";
         cIndex = cIndex - 1;
         // return this.items[cIndex];
         this.cIndex = cIndex;
-        // this.refresh();
       },
       customPage: function (index) {
         this.cIndex = index;
