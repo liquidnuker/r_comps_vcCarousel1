@@ -8,8 +8,7 @@
       </div>
       <div class="col-sm-9">
         <!-- begin vueCarousel1-01 -->
-        <div id="vuecarousel1-01_mount">
-        </div>
+        <vcCarousel101 />
         <!-- end vueCarousel1-01 -->
       </div>
     </div>  
@@ -22,8 +21,7 @@
       </div>
       <div class="col-sm-9">
         <!-- begin vueCarousel1-02 -->
-        <div id="vuecarousel1-02_mount">
-        </div>
+        <vcCarousel102 />
         <!-- end vueCarousel1-02 -->
       </div>
     </div>  
@@ -31,34 +29,23 @@
   </div>
 </template>
 <script>
-import {inject} from "../js/componentinjector.js";
+const vcCarousel101 = () => import('./Carousel1_01.vue');
+const vcCarousel102 = () => import('./Carousel1_02.vue');
+
   export default {
     data () {
       return {
       }
     },
+    components: {
+      vcCarousel101: vcCarousel101,
+      vcCarousel102: vcCarousel102
+    },
     mounted: function () {
       console.log("Home.vue mounted");
-      this.loadCarousel1_01();
+      // this.loadCarousel1_01();
     },   
     methods: {
-      loadCarousel1_01: function() {
-        const Carousel1_01 = resolve => {
-          require.ensure(['./Carousel1_01.vue'], () => {
-            resolve(require('./Carousel1_01.vue'))
-          })
-        };
-        inject("#vuecarousel1-01_mount", Carousel1_01);
-        this.loadCarousel1_02();
-      },
-      loadCarousel1_02: function() {
-        const Carousel1_02 = resolve => {
-          require.ensure(['./Carousel1_02.vue'], () => {
-            resolve(require('./Carousel1_02.vue'))
-          })
-        };
-        inject("#vuecarousel1-02_mount", Carousel1_02);
-      }
     } 
   }
 </script>
