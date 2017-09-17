@@ -71,6 +71,14 @@ if (false) {(function () {
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
 
 
 /* harmony default export */ __webpack_exports__["a"] = ({
@@ -90,7 +98,6 @@ if (false) {(function () {
       cIndex = cIndex % items.length; // go to first        
       // return items[cIndex];
       this.cIndex = cIndex;
-      // this.refresh();
     },
     prevItem: function prevItem() {
       var cIndex = this.cIndex;
@@ -101,7 +108,6 @@ if (false) {(function () {
       cIndex = cIndex - 1;
       // return this.items[cIndex];
       this.cIndex = cIndex;
-      // this.refresh();
     },
     customPage: function customPage(index) {
       this.cIndex = index;
@@ -139,23 +145,50 @@ var store = {
 
 "use strict";
 var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('div', [_c('div', [_vm._v("\n    " + _vm._s(_vm.items[_vm.cIndex].itemName) + "\n  ")]), _vm._v(" "), _vm._l((_vm.items), function(i, index) {
-    return _c('span', [_c('button', {
+  return _c('div', {
+    staticClass: "vueCarousel1-01"
+  }, [_c('div', {
+    staticClass: "vueCarousel1-01_content"
+  }, [_vm._v("\r\n    " + _vm._s(_vm.items[_vm.cIndex].itemName) + "\r\n  ")]), _vm._v(" "), _c('nav', {
+    staticClass: "vueCarousel1-01_pagination"
+  }, _vm._l((_vm.items), function(i, index) {
+    return _c('button', {
+      staticClass: "vueCarousel1-01_pagebuttons",
       on: {
         "click": function($event) {
           _vm.customPage(index)
         }
       }
-    }, [_vm._v(_vm._s(index))])])
-  }), _vm._v(" "), _c('button', {
+    }, [_vm._v(_vm._s(index))])
+  })), _vm._v(" "), _c('div', {
+    staticClass: "vueCarousel1-01_prevnext"
+  }, [_c('button', {
+    staticClass: "vueCarousel1_01_previous",
     on: {
       "click": _vm.prevItem
     }
-  }, [_vm._v("previous")]), _vm._v(" "), _c('button', {
+  }, [_c('svg', {
+    attrs: {
+      "xmlns": "http://www.w3.org/2000/svg"
+    }
+  }, [_c('path', {
+    attrs: {
+      "d": "M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z"
+    }
+  })]), _vm._v(" "), _c('span', [_vm._v("Previous")])]), _vm._v(" "), _c('button', {
+    staticClass: "vueCarousel1_01_next",
     on: {
       "click": _vm.nextItem
     }
-  }, [_vm._v("next")])], 2)
+  }, [_c('span', [_vm._v("Next")]), _vm._v(" "), _c('svg', {
+    attrs: {
+      "xmlns": "http://www.w3.org/2000/svg"
+    }
+  }, [_c('path', {
+    attrs: {
+      "d": "M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"
+    }
+  })])])])])
 }
 var staticRenderFns = []
 render._withStripped = true

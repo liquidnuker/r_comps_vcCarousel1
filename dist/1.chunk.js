@@ -125,9 +125,7 @@ if (false) {(function () {
         onInit: function onInit() {},
         onChange: function onChange() {}
       });
-      setInterval(function () {
-        return topCarousel.next();
-      }, 2600);
+      // setInterval(() => topCarousel.next(), 2600)
     }
   },
   mounted: function mounted() {
@@ -301,6 +299,7 @@ module.exports = function(module) {
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return jsonLoader; });
 // jsonloader
 // ======================================================/
+// todo: replace with axios
 var jsonLoader = {
   start: function start(url) {
     return new Promise(function (resolve, reject) {

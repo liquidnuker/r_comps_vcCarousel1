@@ -1,14 +1,22 @@
 <template>
-  <div>
-    <div>
-      {{ items[cIndex].itemName }}
-    </div>
-    <span v-for="(i, index) in items">
-      <button v-on:click="customPage(index)">{{ index }}</button>
-    </span>
-    <button v-on:click="prevItem">previous</button>
-    <button v-on:click="nextItem">next</button>
+<div class="vueCarousel1-01">
+  <div class="vueCarousel1-01_content">
+    {{ items[cIndex].itemName }}
   </div>
+  <nav class="vueCarousel1-01_pagination" >
+    <button v-for="(i, index) in items" class="vueCarousel1-01_pagebuttons" v-on:click="customPage(index)">{{ index }}</button>
+  </nav>
+  <div class="vueCarousel1-01_prevnext">
+    <button class="vueCarousel1_01_previous" v-on:click="prevItem">
+    <svg xmlns="http://www.w3.org/2000/svg"><path d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z"/>
+  </svg>
+  <span>Previous</span>
+  </button>
+  <button class="vueCarousel1_01_next" v-on:click="nextItem"><span>Next</span>
+  <svg xmlns="http://www.w3.org/2000/svg"><path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"/></svg>
+  </button>
+</div>
+</div>
 </template>
 <script>
 import {store} from "../js/store.js";

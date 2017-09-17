@@ -12,6 +12,8 @@
 @import "vendor/mq"; 
 @import "layout/grid";
 
+@import "components/vueCarousel1";
+
 // show the active breakpoint (_mq.scss)
 // ==================================================/
 @include mq-show-breakpoints;
