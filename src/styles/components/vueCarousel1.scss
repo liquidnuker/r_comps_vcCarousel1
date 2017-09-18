@@ -86,3 +86,110 @@
 .vueCarousel1-01_prevnext {
   @extend %text--center; 
 }
+
+// vueCarousel1-03
+// ==================================================/
+@mixin carousel1-03_theme() {
+  .carousel1-03 {
+    background-color: #2a2a2d;
+    color: #fff;
+
+    button {
+      background-color: #bab9b9;
+      border: 1px solid #000;
+
+      svg {
+        fill: #fff;
+      }
+
+      &:hover {
+        background-color: #fff;
+      }
+
+      &:hover svg {
+        fill: #be0101;
+      }
+    }
+  }
+
+  .carousel1-03_content {
+    background-color: #1c1d22;
+  }
+
+  .carousel1_03_pagebuttons {
+    color: #fff;
+    background-color: #343437;
+    border: 1px solid #fff;
+
+    &:hover {
+      background-color: #fff;
+      color: #be0101;
+    }
+  }
+
+  .carousel1_03_pagebuttons--active {
+    background-color: #be0101;
+    border: 1px solid #000;
+  }
+}
+@include carousel1-03_theme();
+
+
+@mixin carousel1-03_pagebuttons() {
+  $size: 12px;
+  width: $size;
+  height: $size;
+}
+
+.carousel1-03 {
+  // height: 100px; 
+
+  button {
+    border: 1px solid #000; 
+    cursor: pointer;
+
+    span {
+      vertical-align: middle;
+    }
+
+    svg {
+      @extend %display--inline-block;
+      vertical-align: middle;
+      width: 24px;
+      height: 24px;
+    }
+  }
+}
+
+.carousel1_03_previous {
+  padding: 4px 4px 4px 0; /* trbl */
+}
+
+.carousel1_03_next {
+  padding: 4px 0 4px 4px; /* trbl */
+} 
+
+.carousel1-03_pagination {
+  @extend %text--center;
+  padding: 6px 0 6px 0; /* trbl */  
+}
+
+.carousel1-03_content {
+  height: 50px;
+}
+
+.carousel1_03_pagebuttons {
+  @extend %display--inline-block; 
+  @include carousel1-03_pagebuttons(); 
+  border-radius: 50%;
+  margin-right: 4px;   
+  cursor: pointer; 
+}
+
+.carousel1_03_pagebuttons--active {
+  
+}
+
+.carousel1-03_prevnext {
+  @extend %text--center;
+}

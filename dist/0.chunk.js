@@ -5,8 +5,8 @@ webpackJsonp([0],{
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_Home_vue__ = __webpack_require__(4);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_19b7a970_hasScoped_false_node_modules_vue_loader_lib_selector_type_template_index_0_Home_vue__ = __webpack_require__(16);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_Home_vue__ = __webpack_require__(5);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_19b7a970_hasScoped_false_node_modules_vue_loader_lib_selector_type_template_index_0_Home_vue__ = __webpack_require__(19);
 var disposed = false
 var normalizeComponent = __webpack_require__(3)
 /* script */
@@ -51,7 +51,7 @@ if (false) {(function () {
 
 /***/ }),
 
-/***/ 16:
+/***/ 19:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -72,7 +72,15 @@ var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._sel
     staticClass: "col-sm-3"
   }, [_vm._v("\n      39\n    ")]), _vm._v(" "), _c('div', {
     staticClass: "col-sm-9"
-  }, [_c('vcCarousel102')], 1)])])
+  }, [_c('vcCarousel102')], 1)]), _vm._v(" "), _c('h2', {
+    staticClass: "item-id"
+  }, [_vm._v("vueCarousel1-03")]), _vm._v(" "), _c('div', {
+    staticClass: "row"
+  }, [_c('div', {
+    staticClass: "col-sm-3"
+  }, [_vm._v("\n      39\n    ")]), _vm._v(" "), _c('div', {
+    staticClass: "col-sm-9"
+  }, [_c('vcCarousel103')], 1)])])
 }
 var staticRenderFns = []
 render._withStripped = true
@@ -185,7 +193,7 @@ module.exports = function normalizeComponent (
 
 /***/ }),
 
-/***/ 4:
+/***/ 5:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -219,12 +227,28 @@ module.exports = function normalizeComponent (
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
 var vcCarousel101 = function vcCarousel101() {
-  return __webpack_require__.e/* import() */(2).then(__webpack_require__.bind(null, 5));
+  return __webpack_require__.e/* import() */(3).then(__webpack_require__.bind(null, 6));
 };
 var vcCarousel102 = function vcCarousel102() {
   return __webpack_require__.e/* import() */(1).then(__webpack_require__.bind(null, 9));
+};
+var vcCarousel103 = function vcCarousel103() {
+  return __webpack_require__.e/* import() */(2).then(__webpack_require__.bind(null, 16));
 };
 
 /* harmony default export */ __webpack_exports__["a"] = ({
@@ -234,10 +258,11 @@ var vcCarousel102 = function vcCarousel102() {
 
   components: {
     vcCarousel101: vcCarousel101,
-    vcCarousel102: vcCarousel102
+    vcCarousel102: vcCarousel102,
+    vcCarousel103: vcCarousel103
   },
   mounted: function mounted() {
-    console.log("Home.vue mounted");
+    // console.log("Home.vue mounted");
     // this.loadCarousel1_01();
   },
   methods: {}

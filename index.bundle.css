@@ -7,7 +7,7 @@
   .row:after {
     clear: both; }
 
-.vueCarousel1-01 button svg, .vueCarousel1-01_pagebuttons {
+.vueCarousel1-01 button svg, .vueCarousel1-01_pagebuttons, .carousel1-03 button svg, .carousel1_03_pagebuttons {
   display: inline-block; }
 
 input, textarea, select, html, body, div, span, applet, object, iframe,
@@ -29,7 +29,7 @@ time, mark, audio, video {
 .vueCarousel1-01_pagebuttons {
   padding: 4px; }
 
-.vueCarousel1-01_pagination, .vueCarousel1-01_prevnext {
+.vueCarousel1-01_pagination, .vueCarousel1-01_prevnext, .carousel1-03_pagination, .carousel1-03_prevnext {
   text-align: center; }
 
 *,
@@ -831,6 +831,66 @@ body {
   /* trbl */ }
 
 .vueCarousel1-01_pagebuttons {
+  margin-right: 4px;
+  cursor: pointer; }
+
+.carousel1-03 {
+  background-color: #2a2a2d;
+  color: #fff; }
+  .carousel1-03 button {
+    background-color: #bab9b9;
+    border: 1px solid #000; }
+    .carousel1-03 button svg {
+      fill: #fff; }
+    .carousel1-03 button:hover {
+      background-color: #fff; }
+    .carousel1-03 button:hover svg {
+      fill: #be0101; }
+
+.carousel1-03_content {
+  background-color: #1c1d22; }
+
+.carousel1_03_pagebuttons {
+  color: #fff;
+  background-color: #343437;
+  border: 1px solid #fff; }
+  .carousel1_03_pagebuttons:hover {
+    background-color: #fff;
+    color: #be0101; }
+
+.carousel1_03_pagebuttons--active {
+  background-color: #be0101;
+  border: 1px solid #000; }
+
+.carousel1-03 button {
+  border: 1px solid #000;
+  cursor: pointer; }
+  .carousel1-03 button span {
+    vertical-align: middle; }
+  .carousel1-03 button svg {
+    vertical-align: middle;
+    width: 24px;
+    height: 24px; }
+
+.carousel1_03_previous {
+  padding: 4px 4px 4px 0;
+  /* trbl */ }
+
+.carousel1_03_next {
+  padding: 4px 0 4px 4px;
+  /* trbl */ }
+
+.carousel1-03_pagination {
+  padding: 6px 0 6px 0;
+  /* trbl */ }
+
+.carousel1-03_content {
+  height: 50px; }
+
+.carousel1_03_pagebuttons {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
   margin-right: 4px;
   cursor: pointer; }
 

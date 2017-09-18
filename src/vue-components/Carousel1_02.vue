@@ -61,7 +61,7 @@ export default {
     }
   },
   mounted: function () {
-    console.log("Carousel1-02.vue mounted");
+    // console.log("Carousel1-02.vue mounted");
     this.loadCategories();
   }
 }
