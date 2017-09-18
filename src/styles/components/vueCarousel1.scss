@@ -127,7 +127,7 @@
     }
   }
 
-  .active {
+  .carousel1_03_active {
     background-color: #be0101;
     border: 1px solid #000;
   }
@@ -186,7 +186,7 @@
   cursor: pointer; 
 }
 
-.active {
+.carousel1_03_active {
   
 }
 
@@ -200,7 +200,7 @@
   .carousel1-04 {
     background-color: #2a2a2d;
     color: #fff;
-
+    
     button {
       background-color: #bab9b9;
       border: 1px solid #000;
@@ -234,7 +234,7 @@
     }
   }
 
-  .carousel1_04_pagebuttons--active {
+  .carousel1_04_active {
     background-color: #be0101;
     border: 1px solid #000;
   }
@@ -243,7 +243,7 @@
     border-top: 1px dashed #343437;
   }
 }
-@include carousel1-03_theme();
+@include carousel1-04_theme();
 
 @mixin carousel1_04_pagebuttons() {
   $size: 12px;
@@ -292,7 +292,7 @@
   cursor: pointer;
 }
 
-.carousel1_04_pagebuttons--active {
+.carousel1_04_active {
   
 }
 

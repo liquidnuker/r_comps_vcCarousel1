@@ -263,16 +263,16 @@ module.exports = function normalizeComponent (
 //
 
 var vcCarousel101 = function vcCarousel101() {
-  return __webpack_require__.e/* import() */(3).then(__webpack_require__.bind(null, 6));
+  return __webpack_require__.e/* import() */(4).then(__webpack_require__.bind(null, 6));
 };
 var vcCarousel102 = function vcCarousel102() {
   return __webpack_require__.e/* import() */(1).then(__webpack_require__.bind(null, 9));
 };
 var vcCarousel103 = function vcCarousel103() {
-  return __webpack_require__.e/* import() */(2).then(__webpack_require__.bind(null, 16));
+  return __webpack_require__.e/* import() */(3).then(__webpack_require__.bind(null, 16));
 };
 var vcCarousel104 = function vcCarousel104() {
-  return __webpack_require__.e/* import() */(4).then(__webpack_require__.bind(null, 19));
+  return __webpack_require__.e/* import() */(2).then(__webpack_require__.bind(null, 19));
 };
 
 /* harmony default export */ __webpack_exports__["a"] = ({

@@ -9,7 +9,7 @@
     <div class="carousel1_03_pagebuttons" 
     v-for="(i, index) in items"
     @click="customPage(index)"
-    :class="{active: i.isActive}"
+    :class="{carousel1_03_active: i.isActive}"
     :aria-selected="i.isActive">
     </div>
   </nav>
@@ -53,7 +53,7 @@ export default {
   components: {
   },
   mounted: function () {
-    this.setActivePageButton(this.cIndex);
+    
   },
   methods: {    
     prevItem: function() {
@@ -93,9 +93,7 @@ export default {
       
       // set current activePageButton
       this.activePageButton = activeItem;
-    }
-
-
+      }
     }    
   }
 }

@@ -861,7 +861,7 @@ body {
     background-color: #fff;
     color: #be0101; }
 
-.active {
+.carousel1_03_active {
   background-color: #be0101;
   border: 1px solid #000; }
 
@@ -897,33 +897,36 @@ body {
   margin-right: 4px;
   cursor: pointer; }
 
-.carousel1-03 {
+.carousel1-04 {
   background-color: #2a2a2d;
   color: #fff; }
-  .carousel1-03 button {
+  .carousel1-04 button {
     background-color: #bab9b9;
     border: 1px solid #000; }
-    .carousel1-03 button svg {
+    .carousel1-04 button svg {
       fill: #fff; }
-    .carousel1-03 button:hover {
+    .carousel1-04 button:hover {
       background-color: #fff; }
-    .carousel1-03 button:hover svg {
+    .carousel1-04 button:hover svg {
       fill: #be0101; }
 
-.carousel1-03_content {
+.carousel1-04_content {
   background-color: #1c1d22; }
 
-.carousel1_03_pagebuttons {
+.carousel1_04_pagebuttons {
   color: #fff;
   background-color: #343437;
   border: 1px solid #fff; }
-  .carousel1_03_pagebuttons:hover {
+  .carousel1_04_pagebuttons:hover {
     background-color: #fff;
     color: #be0101; }
 
-.active {
+.carousel1_04_active {
   background-color: #be0101;
   border: 1px solid #000; }
+
+.carousel1-04_description {
+  border-top: 1px dashed #343437; }
 
 .carousel1-04 button {
   border: 1px solid #000;

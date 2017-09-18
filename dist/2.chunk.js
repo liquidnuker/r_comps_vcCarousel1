@@ -1,12 +1,12 @@
 webpackJsonp([2],{
 
-/***/ 16:
+/***/ 19:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_Carousel1_03_vue__ = __webpack_require__(17);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_2ed8be9a_hasScoped_false_node_modules_vue_loader_lib_selector_type_template_index_0_Carousel1_03_vue__ = __webpack_require__(18);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_Carousel1_04_vue__ = __webpack_require__(20);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_2ee6d61b_hasScoped_false_node_modules_vue_loader_lib_selector_type_template_index_0_Carousel1_04_vue__ = __webpack_require__(21);
 var disposed = false
 var normalizeComponent = __webpack_require__(3)
 /* script */
@@ -20,15 +20,15 @@ var __vue_scopeId__ = null
 /* moduleIdentifier (server only) */
 var __vue_module_identifier__ = null
 var Component = normalizeComponent(
-  __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_Carousel1_03_vue__["a" /* default */],
-  __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_2ed8be9a_hasScoped_false_node_modules_vue_loader_lib_selector_type_template_index_0_Carousel1_03_vue__["a" /* default */],
+  __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_Carousel1_04_vue__["a" /* default */],
+  __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_2ee6d61b_hasScoped_false_node_modules_vue_loader_lib_selector_type_template_index_0_Carousel1_04_vue__["a" /* default */],
   __vue_styles__,
   __vue_scopeId__,
   __vue_module_identifier__
 )
-Component.options.__file = "vue-components\\Carousel1_03.vue"
+Component.options.__file = "vue-components\\Carousel1_04.vue"
 if (Component.esModule && Object.keys(Component.esModule).some(function (key) {return key !== "default" && key.substr(0, 2) !== "__"})) {console.error("named exports are not supported in *.vue files.")}
-if (Component.options.functional) {console.error("[vue-loader] Carousel1_03.vue: functional components are not supported with templates, they should use render functions.")}
+if (Component.options.functional) {console.error("[vue-loader] Carousel1_04.vue: functional components are not supported with templates, they should use render functions.")}
 
 /* hot reload */
 if (false) {(function () {
@@ -37,9 +37,9 @@ if (false) {(function () {
   if (!hotAPI.compatible) return
   module.hot.accept()
   if (!module.hot.data) {
-    hotAPI.createRecord("data-v-2ed8be9a", Component.options)
+    hotAPI.createRecord("data-v-2ee6d61b", Component.options)
   } else {
-    hotAPI.reload("data-v-2ed8be9a", Component.options)
+    hotAPI.reload("data-v-2ee6d61b", Component.options)
   }
   module.hot.dispose(function (data) {
     disposed = true
@@ -51,11 +51,14 @@ if (false) {(function () {
 
 /***/ }),
 
-/***/ 17:
+/***/ 20:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__js_store_js__ = __webpack_require__(4);
+//
+//
+//
 //
 //
 //
@@ -109,7 +112,7 @@ if (false) {(function () {
   props: ["prName1"],
   components: {},
   mounted: function mounted() {
-    this.setActivePageButton(this.cIndex);
+    // console.log("Carousel1_04.vue mounted");
   },
   methods: {
     prevItem: function prevItem() {
@@ -156,25 +159,27 @@ if (false) {(function () {
 
 /***/ }),
 
-/***/ 18:
+/***/ 21:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
   return _c('div', [_c('div', {
-    staticClass: "carousel1-03"
+    staticClass: "carousel1-04"
   }, [_c('div', {
-    staticClass: "carousel1-03_content"
-  }, [_vm._v("\r\n      " + _vm._s(_vm.items[_vm.cIndex].itemName) + "\r\n    ")]), _vm._v(" "), _c('nav', {
-    staticClass: "carousel1-03_pagination",
+    staticClass: "carousel1-04_content"
+  }, [_vm._v("\r\n      " + _vm._s(_vm.items[_vm.cIndex].itemName)), _c('br'), _vm._v(" "), _c('span', {
+    staticClass: "carousel1-04_description"
+  }, [_vm._v("\r\n        " + _vm._s(_vm.items[_vm.cIndex].description) + "\r\n      ")])]), _vm._v(" "), _c('nav', {
+    staticClass: "carousel1-04_pagination",
     attrs: {
-      "id": "carousel1-03_pagination"
+      "id": "carousel1-04_pagination"
     }
   }, _vm._l((_vm.items), function(i, index) {
     return _c('div', {
-      staticClass: "carousel1_03_pagebuttons",
+      staticClass: "carousel1_04_pagebuttons",
       class: {
-        active: i.isActive
+        carousel1_04_active: i.isActive
       },
       attrs: {
         "aria-selected": i.isActive
@@ -186,11 +191,11 @@ var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._sel
       }
     })
   })), _vm._v(" "), _c('div', {
-    staticClass: "carousel1-03_prevnext"
+    staticClass: "carousel1-04_prevnext"
   }, [_c('button', {
-    staticClass: "carousel1_03_previous",
+    staticClass: "carousel1_04_previous",
     attrs: {
-      "id": "carousel1_03_previous"
+      "id": "carousel1_04_previous"
     },
     on: {
       "click": function($event) {
@@ -206,9 +211,9 @@ var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._sel
       "d": "M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z"
     }
   })]), _vm._v(" "), _c('span', [_vm._v("Previous")])]), _vm._v(" "), _c('button', {
-    staticClass: "carousel1_03_next",
+    staticClass: "carousel1_04_next",
     attrs: {
-      "id": "carousel1_03_next"
+      "id": "carousel1_04_next"
     },
     on: {
       "click": function($event) {
@@ -232,7 +237,7 @@ var esExports = { render: render, staticRenderFns: staticRenderFns }
 if (false) {
   module.hot.accept()
   if (module.hot.data) {
-     require("vue-hot-reload-api").rerender("data-v-2ed8be9a", esExports)
+     require("vue-hot-reload-api").rerender("data-v-2ee6d61b", esExports)
   }
 }
 
@@ -246,15 +251,15 @@ if (false) {
 var store = {
   items: [{
     itemName: "item1",
-    description: "",
+    description: "desc1",
     imgSrc: ""
   }, {
     itemName: "item2",
-    description: "",
+    description: "desc2",
     imgSrc: ""
   }, {
     itemName: "item3",
-    description: "",
+    description: "desc3",
     imgSrc: ""
   }]
 };
