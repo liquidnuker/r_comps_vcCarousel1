@@ -88,18 +88,17 @@ if (false) {(function () {
 //
 //
 //
+//
+//
 
 
 /* harmony default export */ __webpack_exports__["a"] = ({
   data: function data() {
     return {
       items: __WEBPACK_IMPORTED_MODULE_0__js_store_js__["a" /* store */].items,
-      // startIndex: 0,
-
-      pageButtons: [],
-      activePageButton: 0,
-
-      cIndex: 0
+      cIndex: 0,
+      isActive: null,
+      activePageButton: 0
     };
   },
 
@@ -110,7 +109,7 @@ if (false) {(function () {
   props: ["prName1"],
   components: {},
   mounted: function mounted() {
-    // console.log("Carousel1_03.vue mounted");
+    this.setActivePageButton(this.cIndex);
   },
   methods: {
     prevItem: function prevItem() {
@@ -123,7 +122,7 @@ if (false) {(function () {
       cIndex = cIndex - 1;
 
       this.cIndex = cIndex;
-      // this.setActivePageButton(this.cIndex);
+      this.setActivePageButton(this.cIndex);
     },
     nextItem: function nextItem() {
       var cIndex = this.cIndex;
@@ -133,13 +132,25 @@ if (false) {(function () {
       cIndex = cIndex % items.length; // go to first
 
       this.cIndex = cIndex;
-      // this.setActivePageButton(this.cIndex);
+      this.setActivePageButton(this.cIndex);
     },
     customPage: function customPage(num) {
       this.cIndex = num;
       this.setActivePageButton(num);
     },
-    setActivePageButton: function setActivePageButton() {}
+    setActivePageButton: function setActivePageButton(index) {
+      var activeItem = index;
+      var activePageButton = this.activePageButton;
+
+      this.items[activeItem].isActive = true;
+
+      if (activePageButton !== activeItem) {
+        this.items[activePageButton].isActive = false;
+
+        // set current activePageButton
+        this.activePageButton = activeItem;
+      }
+    }
   }
 });
 
@@ -162,6 +173,12 @@ var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._sel
   }, _vm._l((_vm.items), function(i, index) {
     return _c('div', {
       staticClass: "carousel1_03_pagebuttons",
+      class: {
+        active: i.isActive
+      },
+      attrs: {
+        "aria-selected": i.isActive
+      },
       on: {
         "click": function($event) {
           _vm.customPage(index)

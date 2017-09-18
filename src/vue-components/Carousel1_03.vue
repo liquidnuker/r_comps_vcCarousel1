@@ -8,7 +8,9 @@
   <nav id="carousel1-03_pagination" class="carousel1-03_pagination">
     <div class="carousel1_03_pagebuttons" 
     v-for="(i, index) in items"
-    @click="customPage(index)">
+    @click="customPage(index)"
+    :class="{active: i.isActive}"
+    :aria-selected="i.isActive">
     </div>
   </nav>
   <div class="carousel1-03_prevnext">
@@ -36,12 +38,9 @@ export default {
   data () {
     return {   
       items: store.items,
-      // startIndex: 0,
-
-      pageButtons: [],
+      cIndex: 0,
+      isActive: null,
       activePageButton: 0,
-      
-      cIndex: 0
     }
   },
   watch: {
@@ -54,7 +53,7 @@ export default {
   components: {
   },
   mounted: function () {
-    // console.log("Carousel1_03.vue mounted");
+    this.setActivePageButton(this.cIndex);
   },
   methods: {    
     prevItem: function() {
@@ -67,7 +66,7 @@ export default {
       cIndex = cIndex - 1;
 
       this.cIndex = cIndex;
-      // this.setActivePageButton(this.cIndex);
+      this.setActivePageButton(this.cIndex);
     },
     nextItem: function() {
       let cIndex = this.cIndex;
@@ -77,13 +76,25 @@ export default {
       cIndex = cIndex % items.length; // go to first
 
       this.cIndex = cIndex;
-      // this.setActivePageButton(this.cIndex);
+      this.setActivePageButton(this.cIndex);
     },
     customPage: function(num) {
       this.cIndex = num;
       this.setActivePageButton(num);
     },
-    setActivePageButton: function() {
+    setActivePageButton: function(index) {
+      let activeItem = index;
+      let activePageButton = this.activePageButton;
+
+      this.items[activeItem].isActive = true;
+
+      if (activePageButton !== activeItem) {
+      this.items[activePageButton].isActive = false;
+      
+      // set current activePageButton
+      this.activePageButton = activeItem;
+    }
+
 
     }    
   }
