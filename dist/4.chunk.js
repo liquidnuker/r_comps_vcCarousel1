@@ -175,19 +175,19 @@ if (false) {(function () {
 "use strict";
 var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
   return _c('div', [_c('div', {
-    staticClass: "carousel1-03"
+    staticClass: "vueCarousel103"
   }, [_c('div', {
-    staticClass: "carousel1-03_content"
+    staticClass: "vueCarousel103_content"
   }, [_vm._v("\r\n      " + _vm._s(_vm.items[_vm.cIndex].itemName) + "\r\n    ")]), _vm._v(" "), _c('nav', {
-    staticClass: "carousel1-03_pagination",
+    staticClass: "vueCarousel103_pagination",
     attrs: {
-      "id": "carousel1-03_pagination"
+      "id": "vueCarousel103_pagination"
     }
   }, _vm._l((_vm.items), function(i, index) {
     return _c('div', {
-      staticClass: "carousel1_03_pagebuttons",
+      staticClass: "vueCarousel103_pagebuttons",
       class: {
-        carousel1_03_active: i.isActive
+        vueCarousel103_active: i.isActive
       },
       attrs: {
         "aria-selected": i.isActive
@@ -199,11 +199,11 @@ var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._sel
       }
     })
   })), _vm._v(" "), _c('div', {
-    staticClass: "carousel1-03_prevnext"
+    staticClass: "vueCarousel103_prevnext"
   }, [_c('button', {
-    staticClass: "carousel1_03_previous",
+    staticClass: "vueCarousel103_previous",
     attrs: {
-      "id": "carousel1_03_previous"
+      "id": "vueCarousel103_previous"
     },
     on: {
       "click": function($event) {
@@ -219,9 +219,9 @@ var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._sel
       "d": "M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z"
     }
   })]), _vm._v(" "), _c('span', [_vm._v("Previous")])]), _vm._v(" "), _c('button', {
-    staticClass: "carousel1_03_next",
+    staticClass: "vueCarousel103_next",
     attrs: {
-      "id": "carousel1_03_next"
+      "id": "vueCarousel103_next"
     },
     on: {
       "click": function($event) {

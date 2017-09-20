@@ -1,7 +1,7 @@
-// vueCarousel1-01
+// vueCarousel101
 // ==================================================/
-@mixin vueCarousel1-01_theme() {
-  .vueCarousel1-01 {
+@mixin vueCarousel101_theme() {
+  .vueCarousel101 {
     background-color: #2a2a2d;
     color: #fff;
 
@@ -23,11 +23,11 @@
     }
   }
 
-  .vueCarousel1-01_content {
+  .vueCarousel101_content {
     background-color: #1c1d22;
   }
 
-  .vueCarousel1-01_pagebuttons {
+  .vueCarousel101_pagebuttons {
     color: #fff;
     background-color: #343437;
     border: 1px solid #5c5d60;
@@ -39,9 +39,9 @@
   }
 
 }
-@include vueCarousel1-01_theme();
+@include vueCarousel101_theme();
 
-.vueCarousel1-01 {
+.vueCarousel101 {
   
   button {
     cursor: pointer;
@@ -59,38 +59,38 @@
   }
 }
 
-.vueCarousel1_01_previous {
+.vueCarousel101_previous {
   padding: 4px 4px 4px 0; /* trbl */
 }
 
-.vueCarousel1_01_next {
+.vueCarousel101_next {
   padding: 4px 0 4px 4px; /* trbl */
 } 
 
-.vueCarousel1-01_content {
+.vueCarousel101_content {
   height: 50px;
 }
 
-.vueCarousel1-01_pagination {
+.vueCarousel101_pagination {
   @extend %text--center;
   padding: 6px 0 6px 0; /* trbl */
 }
 
-.vueCarousel1-01_pagebuttons {
+.vueCarousel101_pagebuttons {
   @extend %display--inline-block;
   @extend %padd--4;
   margin-right: 4px;
   cursor: pointer;
 }
 
-.vueCarousel1-01_prevnext {
+.vueCarousel101_prevnext {
   @extend %text--center; 
 }
 
-// vueCarousel1-03
+// vueCarousel103
 // ==================================================/
-@mixin carousel1-03_theme() {
-  .carousel1-03 {
+@mixin vueCarousel103_theme() {
+  .vueCarousel103 {
     background-color: #2a2a2d;
     color: #fff;
 
@@ -112,11 +112,11 @@
     }
   }
 
-  .carousel1-03_content {
+  .vueCarousel103_content {
     background-color: #1c1d22;
   }
 
-  .carousel1_03_pagebuttons {
+  .vueCarousel103_pagebuttons {
     color: #fff;
     background-color: #343437;
     border: 1px solid #fff;
@@ -127,21 +127,21 @@
     }
   }
 
-  .carousel1_03_active {
+  .vueCarousel103_active {
     background-color: #be0101;
     border: 1px solid #000;
   }
 }
-@include carousel1-03_theme();
+@include vueCarousel103_theme();
 
 
-@mixin carousel1-03_pagebuttons() {
+@mixin vueCarousel103_pagebuttons() {
   $size: 12px;
   width: $size;
   height: $size;
 }
 
-.carousel1-03 {
+.vueCarousel103 {
   // height: 100px; 
 
   button {
@@ -161,43 +161,43 @@
   }
 }
 
-.carousel1_03_previous {
+.vueCarousel103_previous {
   padding: 4px 4px 4px 0; /* trbl */
 }
 
-.carousel1_03_next {
+.vueCarousel103_next {
   padding: 4px 0 4px 4px; /* trbl */
 } 
 
-.carousel1-03_pagination {
+.vueCarousel103_pagination {
   @extend %text--center;
   padding: 6px 0 6px 0; /* trbl */  
 }
 
-.carousel1-03_content {
+.vueCarousel103_content {
   height: 50px;
 }
 
-.carousel1_03_pagebuttons {
+.vueCarousel103_pagebuttons {
   @extend %display--inline-block; 
-  @include carousel1-03_pagebuttons(); 
+  @include vueCarousel103_pagebuttons(); 
   border-radius: 50%;
   margin-right: 4px;   
   cursor: pointer; 
 }
 
-.carousel1_03_active {
+.vueCarousel103_active {
   
 }
 
-.carousel1-03_prevnext {
+.vueCarousel103_prevnext {
   @extend %text--center;
 }
 
-// vueCarousel1-04
+// vueCarousel104
 // ==================================================/
-@mixin carousel1-04_theme() {
-  .carousel1-04 {
+@mixin vueCarousel104_theme() {
+  .vueCarousel104 {
     background-color: #2a2a2d;
     color: #fff;
     
@@ -219,11 +219,11 @@
     }
   }
 
-  .carousel1-04_content {
+  .vueCarousel104_content {
     background-color: #1c1d22;
   }
 
-  .carousel1_04_pagebuttons {
+  .vueCarousel104_pagebuttons {
     color: #fff;
     background-color: #343437;
     border: 1px solid #fff;
@@ -234,24 +234,24 @@
     }
   }
 
-  .carousel1_04_active {
+  .vueCarousel104_active {
     background-color: #be0101;
     border: 1px solid #000;
   }
 
-  .carousel1-04_description {
+  .vueCarousel104_description {
     border-top: 1px dashed #343437;
   }
 }
-@include carousel1-04_theme();
+@include vueCarousel104_theme();
 
-@mixin carousel1_04_pagebuttons() {
+@mixin vueCarousel104_pagebuttons() {
   $size: 12px;
   width: $size;
   height: $size;
 }
 
-.carousel1-04 {
+.vueCarousel104 {
   // height: 100px; 
 
   button {
@@ -271,53 +271,53 @@
   }
 }
 
-.carousel1_04_previous {
+.vueCarousel104_previous {
   padding: 4px 4px 4px 0; /* trbl */
 }
 
-.carousel1_04_next {
+.vueCarousel104_next {
   padding: 4px 0 4px 4px; /* trbl */
 } 
 
-.carousel1-04_pagination {
+.vueCarousel104_pagination {
   @extend %text--center;
   padding: 4px 0 4px 0; /* trbl */
 }
 
-.carousel1_04_pagebuttons {
+.vueCarousel104_pagebuttons {
   @extend %display--inline-block;
-  @include carousel1_03_pagebuttons();
+  @include vueCarousel103_pagebuttons();
   border-radius: 50%;
   margin-right: 4px;
   cursor: pointer;
 }
 
-.carousel1_04_active {
+.vueCarousel104_active {
   
 }
 
-.carousel1-04_content {
+.vueCarousel104_content {
   
 }
 
-.carousel1-04_description {
+.vueCarousel104_description {
   @extend %display--block;
   height: 50px;
 }
 
-.carousel1-04_prevnext {
+.vueCarousel104_prevnext {
   @extend %text--center;
 }
 
-// vueCarousel1-05
+// vueCarousel105
 // ==================================================/
-@mixin carousel1-05_theme() { 
-  .carousel1-05 {
+@mixin vueCarousel105_theme() { 
+  .vueCarousel105 {
     background-color: #2a2a2d;
     color: #fff;
   }  
 
-  .carousel1_05_pagebuttons {
+  .vueCarousel105_pagebuttons {
     color: #fff;
     background-color: #bab9b9;
     border: 1px solid #fff;
@@ -327,21 +327,21 @@
     }
   }
 
-  .carousel1_05_active {
+  .vueCarousel105_active {
     background-color: #be0101;
     border: 1px solid #000;
   }
 
-  .carousel1-05_description {
+  .vueCarousel105_description {
     border-top: 1px dashed #343437;
   }
 
-  .carousel1-05_content {
+  .vueCarousel105_content {
     background-color: #1c1d22;
   }
 
-  .carousel1_05_previous,
-  .carousel1_05_next {
+  .vueCarousel105_previous,
+  .vueCarousel105_next {
     color: #fff;
     background-color: #343437;
     border: 1px solid #5c5d60;
@@ -360,57 +360,57 @@
     }
   }
 }
-@include carousel1-05_theme();
+@include vueCarousel105_theme();
 
-@mixin carousel1_05_pagebuttons() {
+@mixin vueCarousel105_pagebuttons() {
   $size: 12px;
   width: $size;
   height: $size;
 }
 
-.carousel1-05 {
+.vueCarousel105 {
   // height: 100px; 
 
   @extend %pos--relative;
-  &:hover .carousel1-05_prevnext {
+  &:hover .vueCarousel105_prevnext {
     visibility: visible;
   }
 }
 
-.carousel1_05_pagebuttons {
+.vueCarousel105_pagebuttons {
   @extend %display--inline-block;
-  @include carousel1_04_pagebuttons();
+  @include vueCarousel104_pagebuttons();
   border-radius: 50%;  
   margin-right: 4px;
   cursor: pointer;
 }
 
-.carousel1_05_items {
+.vueCarousel105_items {
   height: 0;
   opacity: 0;
   transition: visibility 4s, opacity 0.5s ease-in;
 }
 
-.carousel1_05_items--active {
+.vueCarousel105_items--active {
   height: auto;
   visibility: visible;
   opacity: 1;
 }
 
-.carousel1_05_active {
+.vueCarousel105_active {
   
 }
 
-.carousel1-05_content {
+.vueCarousel105_content {
   
 }
 
-.carousel1-05_description {
+.vueCarousel105_description {
   height: 100px;
 }
 
 // controls
-.carousel1-05_pagination {
+.vueCarousel105_pagination {
   @extend %pos--absolute;
   @extend %text--center;
   width: 100%;
@@ -418,7 +418,7 @@
   z-index: 3;
 }
 
-.carousel1-05_prevnext {
+.vueCarousel105_prevnext {
   @include center-both;
   visibility: hidden;
   height: 100%;
@@ -426,8 +426,8 @@
   z-index: 2;
 }
 
-.carousel1_05_previous,
-.carousel1_05_next {
+.vueCarousel105_previous,
+.vueCarousel105_next {
   @extend %display--inline-block;
   @extend %pos--relative;
   padding: 10px;
@@ -439,16 +439,16 @@
   }
 }
 
-.carousel1_05_previous {
+.vueCarousel105_previous {
 
 }
 
-.carousel1_05_next {
+.vueCarousel105_next {
   float: right;
 }
 
 // svg
-.carousel1_05_chevron {
+.vueCarousel105_chevron {
   width: 24px;
   height: 24px;
 }

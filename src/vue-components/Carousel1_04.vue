@@ -1,36 +1,36 @@
 <template>
 <div>
-  <!-- begin carousel1-04 -->
-  <div class="carousel1-04">
-    <div class="carousel1-04_content">
+  <!-- begin vueCarousel104 -->
+  <div class="vueCarousel104">
+    <div class="vueCarousel104_content">
       {{ items[cIndex].itemName }}<br>
-      <span class="carousel1-04_description">
+      <span class="vueCarousel104_description">
         {{ items[cIndex].description }}
       </span>
     </div>
-    <nav id="carousel1-04_pagination" class="carousel1-04_pagination">
-      <div class="carousel1_04_pagebuttons"
+    <nav id="vueCarousel104_pagination" class="vueCarousel104_pagination">
+      <div class="vueCarousel104_pagebuttons"
         v-for="(i, index) in items"
         @click="customPage(index)"
-        :class="{carousel1_04_active: i.isActive}"
+        :class="{vueCarousel104_active: i.isActive}"
         :aria-selected="i.isActive">
       </div>
     </nav>
-    <div class="carousel1-04_prevnext">
+    <div class="vueCarousel104_prevnext">
       <button @click="prevItem()" 
-      class="carousel1_04_previous">
+      class="vueCarousel104_previous">
       <svg xmlns="http://www.w3.org/2000/svg"><path d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z"/>
     </svg>
     <span>Previous</span>
     </button>
     <button @click="nextItem()" 
-    class="carousel1_04_next">
+    class="vueCarousel104_next">
     <span>Next</span>
     <svg xmlns="http://www.w3.org/2000/svg"><path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"/></svg>
     </button>
   </div>
 </div>
-<!-- end carousel1-04 -->
+<!-- end vueCarousel104 -->
 </div>
 </template>
 <script>
@@ -71,7 +71,7 @@ export default {
   components: {
   },
   mounted: function () {
-    // console.log("Carousel1_04.vue mounted");
+    // console.log("vueCarousel104.vue mounted");
   },
   methods: {     
     prevItem: function() {

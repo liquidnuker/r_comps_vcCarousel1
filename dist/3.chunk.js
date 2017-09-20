@@ -123,7 +123,7 @@ if (false) {(function () {
   props: ["prName1"],
   components: {},
   mounted: function mounted() {
-    // console.log("Carousel1_04.vue mounted");
+    // console.log("vueCarousel104.vue mounted");
   },
   methods: {
     prevItem: function prevItem() {
@@ -176,21 +176,21 @@ if (false) {(function () {
 "use strict";
 var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
   return _c('div', [_c('div', {
-    staticClass: "carousel1-04"
+    staticClass: "vueCarousel104"
   }, [_c('div', {
-    staticClass: "carousel1-04_content"
+    staticClass: "vueCarousel104_content"
   }, [_vm._v("\r\n      " + _vm._s(_vm.items[_vm.cIndex].itemName)), _c('br'), _vm._v(" "), _c('span', {
-    staticClass: "carousel1-04_description"
+    staticClass: "vueCarousel104_description"
   }, [_vm._v("\r\n        " + _vm._s(_vm.items[_vm.cIndex].description) + "\r\n      ")])]), _vm._v(" "), _c('nav', {
-    staticClass: "carousel1-04_pagination",
+    staticClass: "vueCarousel104_pagination",
     attrs: {
-      "id": "carousel1-04_pagination"
+      "id": "vueCarousel104_pagination"
     }
   }, _vm._l((_vm.items), function(i, index) {
     return _c('div', {
-      staticClass: "carousel1_04_pagebuttons",
+      staticClass: "vueCarousel104_pagebuttons",
       class: {
-        carousel1_04_active: i.isActive
+        vueCarousel104_active: i.isActive
       },
       attrs: {
         "aria-selected": i.isActive
@@ -202,9 +202,9 @@ var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._sel
       }
     })
   })), _vm._v(" "), _c('div', {
-    staticClass: "carousel1-04_prevnext"
+    staticClass: "vueCarousel104_prevnext"
   }, [_c('button', {
-    staticClass: "carousel1_04_previous",
+    staticClass: "vueCarousel104_previous",
     on: {
       "click": function($event) {
         _vm.prevItem()
@@ -219,7 +219,7 @@ var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._sel
       "d": "M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z"
     }
   })]), _vm._v(" "), _c('span', [_vm._v("Previous")])]), _vm._v(" "), _c('button', {
-    staticClass: "carousel1_04_next",
+    staticClass: "vueCarousel104_next",
     on: {
       "click": function($event) {
         _vm.nextItem()

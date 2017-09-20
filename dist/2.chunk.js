@@ -177,21 +177,21 @@ if (false) {(function () {
 "use strict";
 var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
   return _c('div', [_c('div', {
-    staticClass: "carousel1-05"
+    staticClass: "vueCarousel105"
   }, [_c('div', {
-    staticClass: "carousel1-05_content"
+    staticClass: "vueCarousel105_content"
   }, [_vm._v("\r\n      " + _vm._s(_vm.items[_vm.cIndex].itemName)), _c('br'), _vm._v(" "), _c('div', {
-    staticClass: "carousel1-05_description"
+    staticClass: "vueCarousel105_description"
   }, [_vm._v("\r\n        " + _vm._s(_vm.items[_vm.cIndex].description) + "\r\n      ")])]), _vm._v(" "), _c('nav', {
-    staticClass: "carousel1-05_pagination",
+    staticClass: "vueCarousel105_pagination",
     attrs: {
-      "id": "carousel1-05_pagination"
+      "id": "vueCarousel105_pagination"
     }
   }, _vm._l((_vm.items), function(i, index) {
     return _c('div', {
-      staticClass: "carousel1_05_pagebuttons",
+      staticClass: "vueCarousel105_pagebuttons",
       class: {
-        carousel1_05_active: i.isActive
+        vueCarousel105_active: i.isActive
       },
       attrs: {
         "aria-selected": i.isActive
@@ -203,16 +203,16 @@ var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._sel
       }
     })
   })), _vm._v(" "), _c('div', {
-    staticClass: "row carousel1-05_prevnext"
+    staticClass: "row vueCarousel105_prevnext"
   }, [_c('span', {
-    staticClass: "carousel1_05_previous",
+    staticClass: "vueCarousel105_previous",
     on: {
       "click": function($event) {
         _vm.prevItem()
       }
     }
   }, [_c('svg', {
-    staticClass: "carousel1_05_chevron",
+    staticClass: "vueCarousel105_chevron",
     attrs: {
       "xmlns": "http://www.w3.org/2000/svg"
     }
@@ -221,14 +221,14 @@ var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._sel
       "d": "M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z"
     }
   })])]), _vm._v(" "), _c('span', {
-    staticClass: "carousel1_05_next",
+    staticClass: "vueCarousel105_next",
     on: {
       "click": function($event) {
         _vm.nextItem()
       }
     }
   }, [_c('svg', {
-    staticClass: "carousel1_05_chevron",
+    staticClass: "vueCarousel105_chevron",
     attrs: {
       "xmlns": "http://www.w3.org/2000/svg"
     }

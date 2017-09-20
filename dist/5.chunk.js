@@ -136,14 +136,14 @@ if (false) {(function () {
 "use strict";
 var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
   return _c('div', {
-    staticClass: "vueCarousel1-01"
+    staticClass: "vueCarousel101"
   }, [_c('div', {
-    staticClass: "vueCarousel1-01_content"
+    staticClass: "vueCarousel101_content"
   }, [_vm._v("\r\n    " + _vm._s(_vm.items[_vm.cIndex].itemName) + "\r\n  ")]), _vm._v(" "), _c('nav', {
-    staticClass: "vueCarousel1-01_pagination"
+    staticClass: "vueCarousel101_pagination"
   }, _vm._l((_vm.items), function(i, index) {
     return _c('button', {
-      staticClass: "vueCarousel1-01_pagebuttons",
+      staticClass: "vueCarousel101_pagebuttons",
       on: {
         "click": function($event) {
           _vm.customPage(index)
@@ -151,9 +151,9 @@ var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._sel
       }
     }, [_vm._v(_vm._s(index))])
   })), _vm._v(" "), _c('div', {
-    staticClass: "vueCarousel1-01_prevnext"
+    staticClass: "vueCarousel101_prevnext"
   }, [_c('button', {
-    staticClass: "vueCarousel1_01_previous",
+    staticClass: "vueCarousel101_previous",
     on: {
       "click": _vm.prevItem
     }
@@ -166,7 +166,7 @@ var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._sel
       "d": "M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z"
     }
   })]), _vm._v(" "), _c('span', [_vm._v("Previous")])]), _vm._v(" "), _c('button', {
-    staticClass: "vueCarousel1_01_next",
+    staticClass: "vueCarousel101_next",
     on: {
       "click": _vm.nextItem
     }

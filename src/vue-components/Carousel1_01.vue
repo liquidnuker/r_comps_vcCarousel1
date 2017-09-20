@@ -1,18 +1,18 @@
 <template>
-<div class="vueCarousel1-01">
-  <div class="vueCarousel1-01_content">
+<div class="vueCarousel101">
+  <div class="vueCarousel101_content">
     {{ items[cIndex].itemName }}
   </div>
-  <nav class="vueCarousel1-01_pagination" >
-    <button v-for="(i, index) in items" class="vueCarousel1-01_pagebuttons" v-on:click="customPage(index)">{{ index }}</button>
+  <nav class="vueCarousel101_pagination" >
+    <button v-for="(i, index) in items" class="vueCarousel101_pagebuttons" v-on:click="customPage(index)">{{ index }}</button>
   </nav>
-  <div class="vueCarousel1-01_prevnext">
-    <button class="vueCarousel1_01_previous" v-on:click="prevItem">
+  <div class="vueCarousel101_prevnext">
+    <button class="vueCarousel101_previous" v-on:click="prevItem">
     <svg xmlns="http://www.w3.org/2000/svg"><path d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z"/>
   </svg>
   <span>Previous</span>
   </button>
-  <button class="vueCarousel1_01_next" v-on:click="nextItem"><span>Next</span>
+  <button class="vueCarousel101_next" v-on:click="nextItem"><span>Next</span>
   <svg xmlns="http://www.w3.org/2000/svg"><path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"/></svg>
   </button>
 </div>

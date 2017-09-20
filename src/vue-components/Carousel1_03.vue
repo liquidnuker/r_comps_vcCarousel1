@@ -1,35 +1,35 @@
 <template>
 <div>
-  <!-- begin carousel1-03 -->
-  <div class="carousel1-03">
-    <div class="carousel1-03_content">
+  <!-- begin vueCarousel103 -->
+  <div class="vueCarousel103">
+    <div class="vueCarousel103_content">
       {{ items[cIndex].itemName }}
     </div>
-  <nav id="carousel1-03_pagination" class="carousel1-03_pagination">
-    <div class="carousel1_03_pagebuttons" 
+  <nav id="vueCarousel103_pagination" class="vueCarousel103_pagination">
+    <div class="vueCarousel103_pagebuttons" 
     v-for="(i, index) in items"
     @click="customPage(index)"
-    :class="{carousel1_03_active: i.isActive}"
+    :class="{vueCarousel103_active: i.isActive}"
     :aria-selected="i.isActive">
     </div>
   </nav>
-  <div class="carousel1-03_prevnext">
+  <div class="vueCarousel103_prevnext">
     <button @click="prevItem()" 
-    id="carousel1_03_previous" 
-    class="carousel1_03_previous">
+    id="vueCarousel103_previous" 
+    class="vueCarousel103_previous">
     <svg xmlns="http://www.w3.org/2000/svg"><path d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z"/>
   </svg>
   <span>Previous</span>
   </button>
   <button @click="nextItem()" 
-  id="carousel1_03_next" 
-  class="carousel1_03_next">
+  id="vueCarousel103_next" 
+  class="vueCarousel103_next">
   <span>Next</span>
   <svg xmlns="http://www.w3.org/2000/svg"><path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"/></svg>
   </button>
 </div>
 </div>
-<!-- end carousel1-03 -->
+<!-- end vueCarousel103 -->
 </div>
 </template>
 <script>

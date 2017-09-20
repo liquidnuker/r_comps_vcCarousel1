@@ -1,39 +1,39 @@
 <template>
 <div>
-  <!-- begin carousel1-05 -->
-  <div class="carousel1-05">
-    <div class="carousel1-05_content">
+  <!-- begin vueCarousel105 -->
+  <div class="vueCarousel105">
+    <div class="vueCarousel105_content">
       {{ items[cIndex].itemName }}<br>
-      <div class="carousel1-05_description">
+      <div class="vueCarousel105_description">
         {{ items[cIndex].description }}
       </div>
     </div>
-    <nav id="carousel1-05_pagination" class="carousel1-05_pagination">
-      <div class="carousel1_05_pagebuttons"
+    <nav id="vueCarousel105_pagination" class="vueCarousel105_pagination">
+      <div class="vueCarousel105_pagebuttons"
         v-for="(i, index) in items"
         @click="customPage(index)"
-        :class="{carousel1_05_active: i.isActive}"
+        :class="{vueCarousel105_active: i.isActive}"
         :aria-selected="i.isActive">
       </div>
     </nav>
-    <div class="row carousel1-05_prevnext">
+    <div class="row vueCarousel105_prevnext">
       <span @click="prevItem()"
-        class="carousel1_05_previous">
+        class="vueCarousel105_previous">
         <!-- chevron left -->
-        <svg xmlns="http://www.w3.org/2000/svg" class="carousel1_05_chevron">
+        <svg xmlns="http://www.w3.org/2000/svg" class="vueCarousel105_chevron">
           <path d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z"/>
         </svg>
       </span>
       <span @click="nextItem()"
-        class="carousel1_05_next">
+        class="vueCarousel105_next">
         <!-- chevron right -->
-        <svg xmlns="http://www.w3.org/2000/svg" class="carousel1_05_chevron">
+        <svg xmlns="http://www.w3.org/2000/svg" class="vueCarousel105_chevron">
           <path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"/>
         </svg>
       </span>
     </div>
   </div>
-  <!-- end carousel1-05 -->
+  <!-- end vueCarousel105 -->
 </div>
 </template>
 <script>
