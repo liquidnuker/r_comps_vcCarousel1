@@ -33,13 +33,30 @@
 </div>
 </template>
 <script>
-import {store} from "../js/store.js";
+// import {store} from "../js/store.js";
 export default {
   data () {
     return {   
-      items: store.items,
+      items: [
+      {
+        itemName: "item1",
+        description: "desc1",
+        imgSrc: "",
+        isActive: true
+      }, 
+      {
+        itemName: "item2",
+        description: "desc2",
+        imgSrc: "",
+        isActive: false
+      }, 
+      {
+        itemName: "item3",
+        description: "desc3",
+        imgSrc: "",
+        isActive: false
+      }],
       cIndex: 0,
-      isActive: null,
       activePageButton: 0,
     }
   },
@@ -53,7 +70,7 @@ export default {
   components: {
   },
   mounted: function () {
-    
+    // this.setActivePageButton(2);
   },
   methods: {    
     prevItem: function() {

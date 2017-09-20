@@ -5,8 +5,8 @@ webpackJsonp([0],{
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_Home_vue__ = __webpack_require__(5);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_19b7a970_hasScoped_false_node_modules_vue_loader_lib_selector_type_template_index_0_Home_vue__ = __webpack_require__(25);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_Home_vue__ = __webpack_require__(4);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_19b7a970_hasScoped_false_node_modules_vue_loader_lib_selector_type_template_index_0_Home_vue__ = __webpack_require__(24);
 var disposed = false
 var normalizeComponent = __webpack_require__(3)
 /* script */
@@ -51,7 +51,7 @@ if (false) {(function () {
 
 /***/ }),
 
-/***/ 25:
+/***/ 24:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -209,7 +209,7 @@ module.exports = function normalizeComponent (
 
 /***/ }),
 
-/***/ 5:
+/***/ 4:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -284,19 +284,19 @@ module.exports = function normalizeComponent (
 //
 
 var vcCarousel101 = function vcCarousel101() {
-  return __webpack_require__.e/* import() */(4).then(__webpack_require__.bind(null, 6));
+  return __webpack_require__.e/* import() */(5).then(__webpack_require__.bind(null, 5));
 };
 var vcCarousel102 = function vcCarousel102() {
-  return __webpack_require__.e/* import() */(1).then(__webpack_require__.bind(null, 9));
+  return __webpack_require__.e/* import() */(1).then(__webpack_require__.bind(null, 8));
 };
 var vcCarousel103 = function vcCarousel103() {
-  return __webpack_require__.e/* import() */(3).then(__webpack_require__.bind(null, 16));
+  return __webpack_require__.e/* import() */(4).then(__webpack_require__.bind(null, 15));
 };
 var vcCarousel104 = function vcCarousel104() {
-  return __webpack_require__.e/* import() */(2).then(__webpack_require__.bind(null, 19));
+  return __webpack_require__.e/* import() */(3).then(__webpack_require__.bind(null, 18));
 };
 var vcCarousel105 = function vcCarousel105() {
-  return __webpack_require__.e/* import() */(5).then(__webpack_require__.bind(null, 22));
+  return __webpack_require__.e/* import() */(2).then(__webpack_require__.bind(null, 21));
 };
 
 /* harmony default export */ __webpack_exports__["a"] = ({
